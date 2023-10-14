@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int numbers[] = {1, 2, 3, 4, 5}; // Sample numbers, modify as needed
+    int sum = 0;
+    int count = sizeof(numbers) / sizeof(numbers[0]);
+
+    for (int i = 0; i < count; ++i) {
+        sum += numbers[i];
+    }
+
+    double average = (double)sum / count;
+
+    printf("Average: %lf\n", average);
+
+    return 0;
+}
